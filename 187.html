@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
+
+    <title>1024快乐!By 冬</title>
+    <link rel="stylesheet" href="187.css">
+    <script src="js/vue.js"></script>
+   
+</head>
+
+<body>
+    <div class="container">
+        <div class="love" v-for="item in 80" :style="{'--d':(item*-1)*0.3}">
+            <div class="love-hor">
+                <div class="love-ver">
+                    <div class="love-text">404 1024 404 </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+ <!-- typewriter -->
+ <div id="info">
+    <div id="title">
+        <span class="blogtitle"></span>
+        <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.11"></script>
+        <script>
+            var typed = new Typed(".blogtitle", {
+                strings: ['1024快乐!', '永不404!',],
+                startDelay: 300,
+                typeSpeed: 100,
+                loop: true,
+                backSpeed: 50,
+                showCursor: true
+            });
+        </script>
+    </div>
+</div> 
+<div>
+    <script src="js/click2.js"></script>
+</html>
+
+<script>
+    new Vue({
+        el:'.container'
+    })
+</script>
